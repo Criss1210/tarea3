@@ -1,17 +1,21 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    flex-direction: row; /* Alinea los elementos en una fila */
+    padding: 20px; /* Añadido un pequeño padding alrededor del contenido */
+    flex-direction: column; /* Coloca los elementos en columna */
   }
   
   .container {
     display: flex;
     gap: 30px; /* Espacio entre la calculadora y el historial */
+    margin-top: 20px; /* Añade un margen superior */
+    margin-bottom: 20px; /* Añade un margen inferior */
   }
   
   .calculator {
@@ -19,7 +23,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 300px; /* Establece un tamaño fijo para la calculadora */
+    width: 300px;
+    margin-bottom: 20px; /* Margen inferior para separación */
   }
   
   #result {
@@ -64,9 +69,11 @@ body {
     background-color: #e9f7fd; /* Color suave para el fondo */
     padding: 15px;
     border-radius: 10px;
-    width: 250px; /* Ajusta el ancho del historial */
+    width: 250px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 20px; /* Espacio entre la calculadora y el historial */
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Añadido margen inferior */
   }
   
   .history h3 {
@@ -85,9 +92,9 @@ body {
     border-bottom: 1px solid #ddd;
     color: #333; /* Color para los elementos del historial */
   }
-
-/* Modo oscuro */
-body.dark-mode {
+  
+  /* Modo oscuro */
+  body.dark-mode {
     background-color: #2c2c2c;
     color: #fff;
   }
@@ -115,28 +122,9 @@ body.dark-mode {
   button.dark-mode:active {
     background: #333;
   }
-
-/* Centrado de la calculadora */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;  /* Centrado horizontal */
-    align-items: center;      /* Centrado vertical */
-    height: 100vh;            /* Asegura que el body ocupe toda la altura de la ventana */
-    margin: 0;                /* Elimina márgenes */
-    background-color: #f0f0f0;
-  }
   
-  .calculator {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-
-/* Estilos para el formulario de login */
-.login-form {
+  /* Estilo para el formulario de login */
+  .login-form {
     width: 300px;
     padding: 20px;
     background-color: #fff;
@@ -144,6 +132,7 @@ body {
     border-radius: 10px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 20px; /* Márgenes para separar */
   }
   
   .login-form input {
@@ -173,20 +162,20 @@ body {
   #calculator {
     display: none;
   }
-
-
-/* Estilo para el menú de navegación */
-.nav {
+  
+  /* Estilo para el menú de navegación */
+  .nav {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    justify-content: space-between;
     align-items: center;
     background-color: #007bff;
     padding: 10px;
     color: white;
+    margin-bottom: 20px; /* Añadir margen inferior */
   }
   
   .nav .welcome {
-    font-size: 18px; /* Estilo para el mensaje de bienvenida */
+    font-size: 18px;
   }
   
   .nav a {
@@ -198,11 +187,109 @@ body {
   .nav a:hover {
     text-decoration: underline;
   }
-
-
-
-
-
+  
+  .converter {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .converter input,
+  .converter select {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  .converter button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .converter button:hover {
+    background-color: #0056b3;
+  }
+  
+  .converter #output {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Estilos generales para el modo claro */
+  body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Modo oscuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  button.dark-mode {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Conversor de unidades - Modo claro */
+  .converter {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .converter input,
+  .converter select {
+    background-color: white;
+    color: black;
+  }
+  
+  .converter button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Conversor de unidades - Modo oscuro */
+  body.dark-mode .converter {
+    background-color: #333;
+    border: 1px solid #555;
+  }
+  
+  body.dark-mode .converter input,
+  body.dark-mode .converter select {
+    background-color: #555;
+    color: white;
+  }
+  
+  body.dark-mode .converter button {
+    background-color: #444;
+    color: white;
+  }
+  
+  /* Output de la conversión */
+  #output {
+    color: #333;
+  }
+  
+  body.dark-mode #output {
+    color: #bbb;
+  }
 
 
 
