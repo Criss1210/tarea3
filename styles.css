@@ -67,7 +67,7 @@ body {
   /* Estilos para el historial */
   .history {
     background-color: #e9f7fd; /* Color suave para el fondo */
-    padding: 15px;
+    padding: 50px;
     border-radius: 10px;
     width: 250px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -282,15 +282,147 @@ body {
     color: white;
   }
   
-  /* Output de la conversión */
-  #output {
+ /* Output de la conversión */
+#output {
     color: #333;
+    margin-bottom: 10px; /* Agrega espacio debajo */
+}
+
+body.dark-mode #output {
+    color: #bbb;
+    margin-bottom: 20px; /* Agrega espacio debajo en modo oscuro también */
+}
+
+
+/* Estilo para el contador de operaciones */
+#operation-counter {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+#operation-counter p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+#operation-counter span {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+/* Estilo para el pie de página */
+#footer {
+    background-color: #007bff;  /* Fondo azul */
+    color: white;               /* Texto blanco */
+    text-align: center;         /* Centrar el texto */
+    padding: 10px 0;            /* Espaciado arriba y abajo */
+    position: fixed;            /* Fijo en la parte inferior */
+    bottom: 0;                  /* Alineado al fondo de la pantalla */
+    width: 100%;                /* Ocupa todo el ancho */
+    font-size: 14px;            /* Tamaño de fuente más pequeño */
+}
+
+#footer p {
+    margin: 0;                  /* Eliminar márgenes alrededor del texto */
+}
+
+
+/* Estilo para el conversor */
+.converter {
+    margin-top: 20px;            /* Espacio arriba */
+    margin-bottom: 40px;         /* Espacio abajo, empuja el pie de página hacia abajo */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Agregar margen inferior al body para evitar que el contenido toque el pie de página */
+body {
+    padding-bottom: 60px; /* Añade espacio en la parte inferior de la página */
+}
+
+/* O también puedes agregar un margen inferior a la calculadora o conversor */
+.converter {
+    margin-bottom: 50px;  /* Ajusta el margen para evitar el contacto con el pie */
+}
+
+/* Agregar un margen superior para separar el contenido del pie de página */
+body {
+    padding-top: 50px; /* Ajusta el espacio arriba */
+    padding-bottom: 60px; /* Espacio en la parte inferior para el pie de página */
+}
+
+/* O también puedes agregar un margen superior a la calculadora o cualquier otro contenedor principal */
+.container {
+    margin-top: 50px; /* Ajusta el margen superior para separar el contenido de la parte superior */
+}
+
+
+
+/* Estilo para el encabezado */
+header {
+    text-align: center; /* Centra el texto */
+    background-color: #007BFF; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espacio alrededor del encabezado */
+    margin-bottom: 30px; /* Espacio debajo del encabezado para separar el contenido */
   }
   
-  body.dark-mode #output {
-    color: #bbb;
+  /* Estilo para el título del encabezado */
+  header h1 {
+    margin: 0; /* Elimina márgenes por defecto */
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    font-family: Arial, sans-serif; /* Familia tipográfica */
+  }
+  
+  /* Estilos para el body */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    flex-grow: 1; /* Para ocupar el espacio disponible */
+    padding: 20px;
+  }
+  
+  /* Estilo para el pie de página */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
   }
 
+/* Agregar margen inferior al body para evitar que el contenido toque el pie de página */
+body {
+    padding-bottom: 60px; /* Añade espacio en la parte inferior de la página */
+}
+
+/* O también puedes agregar un margen inferior a la calculadora o conversor */
+.converter {
+    margin-bottom: 50px;  /* Ajusta el margen para evitar el contacto con el pie */
+}
 
 
 
