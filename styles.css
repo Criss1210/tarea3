@@ -86,7 +86,51 @@ body {
     color: #333; /* Color para los elementos del historial */
   }
 
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+  
+  .calculator.dark-mode {
+    background: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  #result.dark-mode {
+    background: #555;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  button.dark-mode {
+    background: #555;
+    color: #fff;
+  }
+  
+  button.dark-mode:hover {
+    background: #444;
+  }
+  
+  button.dark-mode:active {
+    background: #333;
+  }
 
-
-
+/* Centrado de la calculadora */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;      /* Centrado vertical */
+    height: 100vh;            /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0;                /* Elimina márgenes */
+    background-color: #f0f0f0;
+  }
+  
+  .calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
   
