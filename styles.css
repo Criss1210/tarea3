@@ -134,3 +134,76 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
+
+/* Estilos para el formulario de login */
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Ocultar la calculadora antes de loguearse */
+  #calculator {
+    display: none;
+  }
+
+
+/* Estilo para el menú de navegación */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+  }
+  
+  .nav .welcome {
+    font-size: 18px; /* Estilo para el mensaje de bienvenida */
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
