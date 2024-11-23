@@ -6,6 +6,12 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    flex-direction: row; /* Alinea los elementos en una fila */
+  }
+  
+  .container {
+    display: flex;
+    gap: 30px; /* Espacio entre la calculadora y el historial */
   }
   
   .calculator {
@@ -13,6 +19,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Establece un tamaño fijo para la calculadora */
   }
   
   #result {
@@ -51,3 +58,35 @@ body {
   button:active {
     background: #003f7f;
   }
+  
+  /* Estilos para el historial */
+  .history {
+    background-color: #e9f7fd; /* Color suave para el fondo */
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px; /* Ajusta el ancho del historial */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Espacio entre la calculadora y el historial */
+  }
+  
+  .history h3 {
+    margin-bottom: 10px;
+    color: #333; /* Color para el título */
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Color para los elementos del historial */
+  }
+
+
+
+
+  
