@@ -49,7 +49,7 @@
     <div class="welcome">
       
     </div>
-    <a href="login.html">Cerrar sesión</a>
+    <a href="login.html">Iniciar sesión</a>
   </div>
 
 
@@ -86,5 +86,24 @@
   </div>
   <script src="script.js"></script>
   
+<!-- Conversor de unidades -->
+<div class="converter">
+    <h3>Conversor de Unidades</h3>
+    <label for="unit-type">Tipo de conversión:</label>
+    <select id="unit-type">
+      <option value="length">Longitud</option>
+      <option value="temperature">Temperatura</option>
+    </select>
+  
+    <label for="input-value">Valor a convertir:</label>
+    <input type="number" id="input-value" placeholder="Ingresa un valor">
+  
+    <button onclick="convert()">Convertir</button>
+  
+    <div id="output"></div>
+  </div>
+
+
+
 </body>
 </html>

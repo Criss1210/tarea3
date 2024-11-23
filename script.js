@@ -95,7 +95,27 @@ document.getElementById('login').addEventListener('submit', function(e) {
   });
 
 
-
+  function convert() {
+    const unitType = document.getElementById('unit-type').value;
+    const inputValue = parseFloat(document.getElementById('input-value').value);
+    let output = '';
+  
+    if (isNaN(inputValue)) {
+      output = 'Por favor, ingresa un valor válido.';
+    } else {
+      if (unitType === 'length') {
+        const metersToKilometers = inputValue / 1000;
+        const centimetersToMeters = inputValue * 100;
+        output = `${inputValue} metros = ${metersToKilometers} kilómetros <br> ${inputValue} centímetros = ${centimetersToMeters} metros`;
+      } else if (unitType === 'temperature') {
+        const celsiusToFahrenheit = (inputValue * 9/5) + 32;
+        const fahrenheitToCelsius = (inputValue - 32) * 5/9;
+        output = `${inputValue} °C = ${celsiusToFahrenheit} °F <br> ${inputValue} °F = ${fahrenheitToCelsius} °C`;
+      }
+    }
+  
+    document.getElementById('output').innerHTML = output;
+  }
 
 
 
