@@ -75,3 +75,30 @@ function toggleTheme() {
     });
   }
 
+
+// Lógica de login
+document.getElementById('login').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita el envío del formulario
+  
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+  
+    // Usuario y contraseña de ejemplo
+    if (username === 'usuario' && password === '12345') {
+      // Si las credenciales son correctas, mostramos la calculadora
+      document.getElementById('loginForm').style.display = 'none'; // Oculta el formulario de login
+      document.getElementById('calculator').style.display = 'block'; // Muestra la calculadora
+    } else {
+      // Si las credenciales son incorrectas, mostramos el mensaje de error
+      document.getElementById('error-message').style.display = 'block';
+    }
+  });
+
+
+
+
+
+
+
+
+
