@@ -5,6 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
   <link rel="stylesheet" href="styles.css">
+
+
+
+
+  <style>
+    /* Estilos para el historial */
+    .history {
+      margin-top: 20px;
+      max-height: 150px;
+      overflow-y: auto;
+      border-top: 2px solid #ddd;
+      padding-top: 10px;
+    }
+
+    .history h3 {
+      margin-bottom: 10px;
+    }
+
+    .history ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .history li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+
+
+
+
+
+
 </head>
 <body>
   <div class="calculator">
@@ -30,6 +64,12 @@
       <button onclick="append('.')">.</button>
     </div>
   </div>
+
+  <div class="history">
+    <h3>Historial de operaciones</h3>
+    <ul id="historyList"></ul>
+  </div>
   <script src="script.js"></script>
+  
 </body>
 </html>
