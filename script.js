@@ -57,5 +57,21 @@ function calculate() {
 }
 
 
-
+// Función para alternar entre modo claro y modo oscuro
+function toggleTheme() {
+    // Cambiar el tema del body
+    document.body.classList.toggle('dark-mode');
+  
+    // Cambiar el tema de la calculadora
+    document.querySelector('.calculator').classList.toggle('dark-mode');
+  
+    // Cambiar el tema del campo de resultados
+    document.getElementById('result').classList.toggle('dark-mode');
+  
+    // Cambiar el tema de los botones
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+      button.classList.toggle('dark-mode');
+    });
+  }
 
